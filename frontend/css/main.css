@@ -20,7 +20,7 @@ height: 7%;
   text-transform: uppercase;
 }
 
-.navbar{
+.navbar, footer{
  background-color: #EFCC52;
 
 }
