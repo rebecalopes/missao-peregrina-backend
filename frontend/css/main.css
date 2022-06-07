@@ -3,6 +3,9 @@ body, html{
     height: 100%;
     margin: 0 auto;
     font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 img {
     width: 100%;
@@ -29,6 +32,10 @@ img#img01, img#img02, img#img03{
   max-width:1600px;
   max-height:400px;
   width: auto;
+}
+
+footer{
+  margin-top: auto;
 }
 
 
