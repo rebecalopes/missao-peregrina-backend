@@ -26,10 +26,9 @@ img {
   text-transform: uppercase;
 }
 
-.navbar,
-footer {
+.navbar
+{
   background-color: #EFCC52;
-
 }
 
 img#img01,
@@ -40,8 +39,9 @@ img#img03 {
   width: auto;
 }
 
-footer {
+footer, .container-fluid {
   margin-top: auto;
+  background-color: #EFCC52;
 }
 
 a#linkproject1, a#linkproject2, a#linkproject3, a#linkproject4 {
