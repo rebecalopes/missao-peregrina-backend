@@ -74,54 +74,72 @@
 
     <div class="row">
       <div class="col">
-          <p class="text-center">Inscreva-se no formulário para ser voluntário</p>
+        <p class="text-center">Inscreva-se no formulário para ser voluntário</p>
       </div>
     </div>
 
     <form>
-      <div class="container">
-      <div class="form-group">
-        <label for="inputNome">Nome</label>
-        <input type="text" class="form-control" id="inputNome" placeholder="Maria da Silva">
-      </div>
-        <div class="form-group">
-          <label for="inputEmail4">Email</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+      <div class="container mb-5">
+        <div class="row">
+          <div class="form-group col-lg-9">
+            <label for="inputNome">Nome</label>
+            <input type="text" class="form-control" id="inputNome" placeholder="Nome completo">
+          </div>
+          <div class="form-group col-lg-3">
+            <label for="inputDataNascimento">Data Nascimento</label>
+            <input type="text" class="form-control" id="inputDataNascimento" placeholder="01/01/1900">
+          </div>
         </div>
-      <div class="form-group">
-        <label for="inputAddress">Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-      </div>
-      <div class="form-group">
-        <label for="inputAddress2">Address 2</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-      </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="inputCity">City</label>
-          <input type="text" class="form-control" id="inputCity">
+        <div class="row">
+          <div class="form-group col-lg-8">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="contato@email.com">
+          </div>
+          <div class="form-group col-lg-4">
+            <label for="inputCTelefone">Telefone</label>
+            <input type="text" class="form-control" id="inputTelefone" placeholder="(11)99998888">
+          </div>
         </div>
-        <div class="form-group col-md-4">
-          <label for="inputState">State</label>
-          <select id="inputState" class="form-control">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
+        <div class="row">
+          <div class="form-group col-lg-6">
+            <label for="inputEndereco">Endereço</label>
+            <input type="text" class="form-control" id="inputEndereco" placeholder="Rua castelo, nº 001">
+          </div>
+          <div class="form-grou col-lg-3">
+            <label for="inputCidade">Cidade</label>
+            <input type="text" class="form-control" id="inputCidade" placeholder="São Paulo">
+          </div>
+          <div class="form-group col-lg-3">
+            <label for="inputAddress2">CEP</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="10000123">
+          </div>
         </div>
-        <div class="form-group col-md-2">
-          <label for="inputZip">Zip</label>
-          <input type="text" class="form-control" id="inputZip">
+        <div class="row">
+          <div class="form-group col-lg-8">
+            <label for="inputEscolaridade">Escolaridade</label>
+            <input type="text" class="form-control" id="inputEscolaridade" placeholder="Graduação em Administração">
+          </div>
+          <div class="col-lg-4">
+            <div class="row">
+              <p>Tem experiencia como voluntário?</p>
+            </div>
+            <div class="row">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                  value="option1">
+                <label class="form-check-label" for="inlineRadio1">Sim</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                  value="option2">
+                <label class="form-check-label" for="inlineRadio2">Não</label>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="form-group">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Check me out
-          </label>
+        <div class="row justify-content-center">
+          <button type="submit" class="btn btn-success ">Enviar</button>
         </div>
-      </div>
-      <button type="submit" class="btn btn-primary">Sign in</button>
       </div>
     </form>
 
