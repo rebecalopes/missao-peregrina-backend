@@ -19,7 +19,6 @@ public class Voluntario implements Serializable {
     private String nome;
     private Date nascimento;
     private String endereco;
-    private Integer ddd;
     private Integer telefone;
     private String escolaridade;
     private Boolean voluntariadoAnterior;
@@ -28,12 +27,11 @@ public class Voluntario implements Serializable {
 
     }
 
-    public Voluntario(Integer id, String nome, Date nascimento, String endereco, Integer ddd, Integer telefone, String escolaridade, Boolean voluntariadoAnterior) {
+    public Voluntario(Integer id, String nome, Date nascimento, String endereco, Integer telefone, String escolaridade, Boolean voluntariadoAnterior) {
         this.id = id;
         this.nome = nome;
         this.nascimento = nascimento;
         this.endereco = endereco;
-        this.ddd = ddd;
         this.telefone = telefone;
         this.escolaridade = escolaridade;
         this.voluntariadoAnterior = voluntariadoAnterior;
@@ -69,14 +67,6 @@ public class Voluntario implements Serializable {
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
-    }
-
-    public Integer getDdd() {
-        return ddd;
-    }
-
-    public void setDdd(Integer ddd) {
-        this.ddd = ddd;
     }
 
     public Integer getTelefone() {
