@@ -1,1 +1,0 @@
-web: java -D server.port=$PORT -D spring.profiles.active=prod $JAVA_OPTS -jar target/missao-peregrina-0.0.1-SNAPSHOT

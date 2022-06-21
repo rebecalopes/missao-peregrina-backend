@@ -1,0 +1,19 @@
+{
+    "name": "site-missao-peregrina",
+    "version": "0.0.0",
+    "description": "site para ong missão peregrina",
+    "main": "app.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/rebecalopes/site-missao-peregrina.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/rebecalopes/site-missao-peregrina/issues"
+    },
+    "homepage": "https://github.com/rebecalopes/site-missao-peregrina"
+  }
