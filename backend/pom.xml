@@ -8,9 +8,9 @@
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.missaoperegrina</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>missao-peregrina</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
+    <name>missao-peregrina</name>
     <description>website ong missão peregrina</description>
     <properties>
         <java.version>11</java.version>
