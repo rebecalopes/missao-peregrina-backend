@@ -27,7 +27,7 @@ public class VoluntarioService {
     }
 
     public Voluntario fromDTO (VoluntarioDTO voluntarioDTO){
-        Voluntario voluntario = new Voluntario (null, voluntarioDTO.getNome(), voluntarioDTO.getNascimento(), voluntarioDTO.getEndereco(), voluntarioDTO.getTelefone(), voluntarioDTO.getEscolaridade(), voluntarioDTO.getVoluntariadoAnterior());
+        Voluntario voluntario = new Voluntario (null, voluntarioDTO.getNome(), voluntarioDTO.getNascimento(), voluntarioDTO.getEmail(), voluntarioDTO.getEndereco(), voluntarioDTO.getTelefone(), voluntarioDTO.getEscolaridade(), voluntarioDTO.getVoluntariadoAnterior());
         return voluntario;
     }
 

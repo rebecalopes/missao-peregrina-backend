@@ -3,14 +3,13 @@ package com.missaoperegrina.dto;
 import java.io.Serializable;
 import java.util.Date;
 
-import com.missaoperegrina.domain.Voluntario;
-
 
 public class VoluntarioDTO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     private String nome;
+    private String email;
     private Date nascimento;
     private String endereco;
     private String telefone;
@@ -35,6 +34,14 @@ public class VoluntarioDTO implements Serializable {
 
     public void setNascimento(Date nascimento) {
         this.nascimento = nascimento;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getEndereco() {
