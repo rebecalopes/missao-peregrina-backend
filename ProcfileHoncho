@@ -1,2 +1,2 @@
 node: cd client && npm install && node js/app.js
-java: cd server && java -D server.port=$PORT -D spring.profiles.active=prod $JAVA_OPTS -jar target/missao-peregrina-0.0.1-SNAPSHOT
+java: cd server && java $JAVA_OPTS -cp target/classes:target/dependency/* com.missaoperegrina
