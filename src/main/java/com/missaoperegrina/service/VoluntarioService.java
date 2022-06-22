@@ -1,6 +1,7 @@
 package com.missaoperegrina.service;
 
 import com.missaoperegrina.domain.Voluntario;
+import com.missaoperegrina.dto.VoluntarioDTO;
 import com.missaoperegrina.repositories.VoluntarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,6 +24,11 @@ public class VoluntarioService {
 
     public List<Voluntario> buscarTodosVoluntarios(){
         return repository.findAll();
+    }
+
+    public Voluntario fromDTO (VoluntarioDTO voluntarioDTO){
+        Voluntario voluntario = new Voluntario (null, voluntarioDTO.getNome(), voluntarioDTO.getNascimento(), voluntarioDTO.getEndereco(), voluntarioDTO.getTelefone(), voluntarioDTO.getEscolaridade(), voluntarioDTO.getVoluntariadoAnterior());
+        return voluntario;
     }
 
 }

@@ -4,6 +4,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
@@ -17,9 +20,11 @@ public class Voluntario implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nome;
+
+    @JsonFormat(pattern = "dd/MM/yyyy HH:mm")
     private Date nascimento;
     private String endereco;
-    private Integer telefone;
+    private String telefone;
     private String escolaridade;
     private Boolean voluntariadoAnterior;
 
@@ -27,7 +32,7 @@ public class Voluntario implements Serializable {
 
     }
 
-    public Voluntario(Integer id, String nome, Date nascimento, String endereco, Integer telefone, String escolaridade, Boolean voluntariadoAnterior) {
+    public Voluntario(Integer id, String nome, Date nascimento, String endereco, String telefone, String escolaridade, Boolean voluntariadoAnterior) {
         this.id = id;
         this.nome = nome;
         this.nascimento = nascimento;
@@ -69,11 +74,11 @@ public class Voluntario implements Serializable {
         this.endereco = endereco;
     }
 
-    public Integer getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(Integer telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
