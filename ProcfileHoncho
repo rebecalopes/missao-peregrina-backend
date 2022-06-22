@@ -1,2 +1,0 @@
-node: cd client && npm install && node js/app.js
-java: cd server && java $JAVA_OPTS -cp target/classes:target/dependency/* com.missaoperegrina
